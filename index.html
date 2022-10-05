@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB1-BIFF</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>부산국제영화제</h1>
+    <input
+      type="button"
+      value="night"
+      onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';
+"
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+"
+    />
+
+    <input
+      id="night_day"
+      type="button"
+      value="night"
+      onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'night'){
+  target.style.backgroundColor='black';
+  target.style.color='white';
+  this.value = 'day';
+  }
+  else {
+  target.style.backgroundColor='white';
+  target.style.color='black';
+  this.value = 'night';
+  }
+  
+  "
+    />
+
+    <div id="grid">
+      <ol>
+        <li><a href="1.html" class="saw">info</a></li>
+        <li><a href="2.html" class="saw">date</a></li>
+        <li><a href="3.html">timetable</a></li>
+      </ol>
+
+      <div id="article">
+        <h2>WELCOME</h2>
+        <p>환영합니다. 더 많은 정보는 좌측 메뉴를 확인해주세요.</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<input
+  id="night_day"
+  type="button"
+  value="night"
+  onclick="
+if(this.value === 'night'){
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';
+this.value = 'day';
+}
+else {
+document.querySelector('body').style.backgroundColor='white';
+document.querySelector('body').style.color='black';
+this.value = 'night';
+}
+
+"
+/>
