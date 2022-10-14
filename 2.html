@@ -4,10 +4,21 @@
     <meta charset="utf-8" />
     <title>WEB1-BIFF</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="colors.js"></script>
   </head>
 
   <body>
-    <h1>부산국제영화제</h1>
+    <h1><a href="index.html">부산국제영화제</a></h1>
+    <input
+      id="night_day"
+      type="button"
+      value="night mode"
+      onclick="
+nightDayHandler(this);
+"
+    />
     <div id="grid">
       <ol>
         <li><a href="1.html" class="saw">info</a></li>
@@ -17,8 +28,16 @@
 
       <div id="article">
         <h2>DATE</h2>
-        <p>날짜는 어쩌고 저쩌고</p>
+        <p>2022년 10월 5일 (수) – 2022년 10월 14일 (금)</p>
       </div>
     </div>
+    <input
+      id="night_day"
+      type="button"
+      value="night mode"
+      onclick="
+nightDayHandler(this);
+"
+    />
   </body>
 </html>

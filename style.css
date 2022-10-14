@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 a {
-  color: black;
+  
   text-decoration: none;
 }
 h1 {
@@ -13,10 +13,14 @@ h1 {
   padding: 20px;
 }
 ol {
+  font-size: 20px;
   border-right: 1px solid gray;
   width: 100px;
   margin: 0;
   padding: 20px;
+}
+#clip {
+  margin: 50px 50px;
 }
 
 #grid {
@@ -40,4 +44,33 @@ ol {
   h1 {
     border-bottom: none;
   }
+}
+#night_day {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#night_day:hover {
+  opacity: 1;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+}
+
+.clip {
+  di splay: flex;
+  justify-content: center;
+  align-items: center;
 }
